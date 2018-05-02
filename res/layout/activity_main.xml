@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heigth_header"
+        android:background="@color/background_header">
+        ></View>
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="@dimen/dim_photo"
+        android:layout_height="@dimen/dim_photo"
+        android:layout_above="@+id/textSwicher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        app:srcCompat="@drawable/foto" />
+
+    <TextSwitcher
+        android:id="@+id/textSwicher"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="20dp"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right" />
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/icon_user"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/icon_user"
+        android:layout_toRightOf="@+id/icon_user"
+        android:text="Eric de jesus machado"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_text" />
+
+    <TextView
+        android:id="@+id/user_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignStart="@+id/user_name"
+        android:layout_alignTop="@+id/icon_facebook"
+        android:text="Eric Machado"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_text"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_facebook"
+        android:layout_alignStart="@+id/user_facebook"
+        android:layout_alignTop="@+id/icon_contact"
+        android:text="(62) 9 9150-6329"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_text"
+        android:layout_marginTop="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/icon_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/icon_user"
+        android:layout_alignStart="@+id/icon_user"
+        android:layout_below="@+id/icon_user"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/icon_facebook" />
+
+    <ImageView
+        android:id="@+id/icon_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/icon_facebook"
+        android:layout_alignRight="@+id/icon_facebook"
+        android:layout_below="@+id/icon_facebook"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/icon_contact" />
+
+
+    <ImageView
+        android:id="@+id/icon_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textSwicher"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="29dp"
+        app:srcCompat="@drawable/icon_user" />
+
+</RelativeLayout>
